@@ -13,4 +13,16 @@
 
 import { strict as assert } from "assert";
 
+
+
+
+function average<T extends number> (array:number[]):number {
+
+    const sum = array.reduce((total, current) => total+ current, 0);
+    return sum/array.length;
+
+
+}
 const numbers: number[] = [1, 2, 3, 4, 5];
+const averageS = average(numbers)
+assert.equal(averageS, 3);

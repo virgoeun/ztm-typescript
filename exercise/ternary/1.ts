@@ -10,3 +10,16 @@
 
 import { strict as assert } from "assert";
 
+function toFah(degreeC: number): number {
+  return degreeC * 1.8 + 32;
+}
+
+function toCel(degreeF: number): number {
+  return (degreeF - 32) / 1.8;
+}
+
+function converter(unit: "C" | "F", temp: number): number {
+  return unit === "C" ? toFah(temp) : toCel(temp);
+}
+assert.equal(converter("C", 25), 77);
+assert.equal(converter("F", 68), 20);

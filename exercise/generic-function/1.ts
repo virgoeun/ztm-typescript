@@ -13,4 +13,19 @@
 
 import { strict as assert } from "assert";
 
+function findElement<T>(array: T[], element: T): number | undefined {
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === element) {
+      return i;
+    }
+  }
+  return undefined;
+}
+
+// Example usage
 const numbers: number[] = [1, 2, 3, 4, 5];
+const index1 = findElement(numbers, 3);
+const index2 = findElement(numbers, 6);
+
+assert.equal(index1, 2);
+assert.equal(index2, undefined);
