@@ -24,6 +24,9 @@ const no = false;
 const missing = undefined;//completely missing 
 const empty = null; // we KNOW it's missing
 
+console.log(typeof empty); //object
+console.log(typeof missing); // undefined
+
 let someNum = 0; // for reassigning (not const)
 someNum =1;
 someNum=2;

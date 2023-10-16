@@ -12,3 +12,12 @@ import { strict as assert } from "assert";
 //
 // Useful links:
 // https://www.typescriptlang.org/docs/handbook/2/functions.html
+
+function sumFunction (a, b) {
+return a +b 
+
+}
+
+const answer = sumFunction (2,2);
+console.log("💖 answer", answer)
+

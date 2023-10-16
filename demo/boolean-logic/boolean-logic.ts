@@ -6,3 +6,20 @@ import { strict as assert } from "assert";
 // values to make deductions or draw conclusions. Boolean logic is used to
 // express conditions and make decisions based on the truth or falsehood of
 // these conditions.
+
+
+const age = 18;
+const canPurchase = age >=18;
+assert.equal(canPurchase,true );
+
+const denyPurchase = age < 18;
+assert.equal(denyPurchase, false)
+
+const two =2;
+const isThree = (1+two) ===3; //boolean
+
+assert.equal(isThree,true);
+
+const isNotThree = (1+two) !==10;
+
+assert.equal(isNotThree, true);
