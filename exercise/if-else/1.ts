@@ -8,7 +8,16 @@
 // To acknowledge if the person is allowed to make the purchase, print out "OK
 // to purchase". To acknowledge if the person is now allowed to make the
 // puchase, print out "cannot purchase".
-//
+
+
+const age = 25;
+
+if (age >=18) {
+    console.log("Ok to purchase");
+} else if (age<18) {
+    console.log("cannot purchase");
+}
+
 // == Part 2 ==
 //
 // Write some code that can determine if a person is an adult, child,
@@ -26,5 +35,13 @@
 // Check your code by changing the age to different values and confirm that the
 // correct messages are displayed.
 
-const age = 25;
+const personAge = 15;
+if(personAge <18) {
+    console.log ("child")
+}
+else if (personAge >=18 && personAge <= 64) {
+    console.log("Adult");
+} else if (personAge>64) {
+    console.log("Senior");
+}
 

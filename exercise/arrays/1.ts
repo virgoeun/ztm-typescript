@@ -53,3 +53,23 @@ import { strict as assert } from "assert";
 const ranking = [3, 4, 1, 2];
 const teams = ["red", "blue", "green", "yellow"];
 
+
+const firstRanking = ranking.splice(2,2); // [3,4]
+const newRanking = firstRanking.concat(ranking) // [1,2,3,4]
+
+assert.deepEqual(newRanking, [1,2,3,4])
+
+
+const firstTeams = teams.splice(2,2) // [green, yellow]
+// teams = [red,blue] 
+
+const newTeams = firstTeams.concat(teams);
+assert.deepEqual(newTeams, ["green", "yellow", "red", "blue"])
+
+
+newRanking.push(5)
+newTeams.push("pink")
+
+const reversedRanking = newRanking.slice().reverse();
+
+assert.deepEqual(reversedRanking, [5, 4, 3, 2, 1]);

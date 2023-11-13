@@ -10,3 +10,23 @@ import { strict as assert } from "assert";
 //
 // Useful links:
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+const numbers: number[] = [1,2,3];
+
+let letters:string[]= ['a', 'b', "c"];
+
+const b =  letters[1];
+assert.equal(b, "b");
+
+letters[1] = "d"
+assert(letters[1]==="d")
+
+
+const names =[
+    [
+        "Jason", "L"
+    ],
+["Alice", "A"]
+]
+
+const Jason = names[0][0]

@@ -10,3 +10,13 @@ import { strict as assert } from "assert";
 //
 // Useful links:
 // https://www.typescriptlang.org/docs/handbook/2/objects.html#tuple-types
+
+
+function coord(): [number, number] {
+return [3,5]
+}
+
+const coordinate  = coord();
+
+const [x, y] = coord();// destructuring index (instead of coordinate[0] -> just x)
+
